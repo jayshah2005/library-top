@@ -1,0 +1,121 @@
+body{
+    padding: 0px;
+    margin: 0px;
+
+    background-image: url("./assests/library-background.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat;
+    display: flex;
+    flex: 1;
+}
+
+.container{
+    display: grid;
+    grid-template-rows: repeat(2, 20rem);
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    justify-items: center;
+    gap: 50px;
+    flex: 1;
+}
+
+button{
+    width: 150px;
+    height: 40px;
+    background-color: rgb(255, 68, 0);
+    box-shadow: 3px 3px 10px rgb(239, 118, 18);
+    font-family: "tech-font", sans-serif;
+    font-weight: bold;
+    border: 1px solid black;
+}
+
+button:active{
+    box-shadow: none;
+}
+
+form{
+    display: flex;
+    background-color: rgba(213, 207, 207, 0.871);
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+
+    grid-row: 2 / 3;
+    grid-column-start: 1;
+    grid-column-end: none;
+    align-self: center;
+}
+
+
+label{
+    position: relative;
+}
+
+input{
+    width: 150px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid black;
+
+    justify-self: center;
+    align-self: center;
+    
+}
+
+input:focus-visible{
+    outline: none;
+}
+
+.hidden{
+    visibility: hidden;
+    height: 0px;
+    background: transparent;
+    grid-row: 2 / 3;
+    grid-column-start: 1;
+}
+
+.book{
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+}
+
+
+.title{
+    display: flex;
+    height: 1.3rem;
+    width: 8rem;
+    font-size: 1rem;
+    border: 1px solid black;
+    color: black;
+    justify-content: center;
+}
+
+.author{
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+}
+
+.numpages{
+    align-self: flex-end;
+    height: 1.3rem;
+    width: 4rem;
+}
+
+.new-book{
+    justify-self: center;
+    grid-row: 2 / 3;
+    grid-column-start: 1;
+    grid-column-end: none;
+    align-self: center;
+
+}
